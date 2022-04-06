@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width", initial-scale="1.0">
+    <title>Google Advanced Search</title>
+    <link rel="stylesheet" href="advancedsearch.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Google Search</a>
+        <a href="googleimage.html">Google Image</a>
+    </nav>
+    <div class="container">
+        <h4>Advanced Search</h4>
+        <hr>
+        <form action="https://www.google.com/search">
+            <div class="grid">
+                <h5>Find pages with..</h5>
+            </div>
+            <div class="grid-itme main-hearder-2">
+                <h5 clss="second-label">To do this in the search box</h5>
+            </div>
+            <!-- 1 -->
+            <div class="grid-item">
+                <label for="">
+                    all these words:
+                </label>
+            </div>
+            <!-- 2 -->
+            <div class="grid-item">
+                <label for="">
+                    this exact word or phase:
+                </label>
+            </div>
+            <div class="grid-item">
+                <input type="text" class="inp" name="as_epq">
+            </div>
+            <div class="grid-item second-label">
+                Put exact word in quotes: "pit bull"
+            </div>
+            <!-- 3 -->
+            <div class="grid-item">
+                <label for="">any of these words:</label>
+            </div>
+            <div class="grid-item second-label">
+                <input type="text" class="inp" name="as_oq">
+            </div>
+            <div class="grid-item second-label">
+                Type OR beween all the words you want: miniature OR standard
+            </div>
+             <!-- 4 -->
+             <div class="grid-item">
+                <label for="">none of these words:</label>
+            </div>
+            <div class="grid-item second-label">
+                <input type="text" class="inp" name="as_eq">
+            </div>
+            <div class="grid-item second-label">
+                Put a minus sign just before words that you don't want: -dog, -"American Pit Bull Terrier"
+            </div>
+            <!-- 5 -->
+            <div class="grid-item">
+                <label for="">
+                    numbers ranging from 
+                </label>
+            </div>
+            <div class="grid-item">
+                <input type="text" class="num-inp" name="as-nlo">
+                <span>to</span>
+                <input type="text" class="num-inp" name="as-nhi">
+            </div>
+            <div class="grid-item second-label">
+                Put two full stops between the numbers and add a unit of measurement: 1..10 cm, $10..$100, 2012..2022
+            </div>
+            <div class="grid-item heading">
+                Then narrow your results by..
+            </div>
+            <div class="grid-item">
+                <label for="">
+                    language:
+                </label>
+            </div>
+            <div class="grid-item">
+                <select name="lr" id="" class="inp">
+                    <option value="">any language</option>
+                    <option value="lang_en">English</option>
+                    <option value="lang_ch">Chinese</option>
+                </select>
+            </div>
+            <div class="grid-item">
+                <select name="cr" id="" class="imp">
+                    <option value="countryUS">the United States</option>
+                    <option value="countryCH">China</option>
+                </select>
+            </div>
+            <div class="grid item second-label">
+                Find pages published in a particular region.
+            </div>
+            <!-- Last Update -->>
+            <div class="grid-item">
+                last update:
+            </div>
+            <div class="grid-item">
+                <select name="as_qdr" id="" class="inp">
+                    <option value="all">anytime</option>
+                    <option value="d">last 24 hours</option>
+                    <option value="w">up to a week ago</option>
+                    <option value="m">up to a month ago</option>
+                    <option value="y">up to a year ago</option>
+                </select>
+            </div>
+            <div class="grid-item second-label">
+                Find pages updated with the time that you specify.
+            </div>
+            <!-- site or domain-->
+            <div class="grid-item">
+                <label for="">
+                    site or domain:
+                </label>
+            </div>
+            <div class="grid-item">
+                <input type="text" class="inp" name="as_sitesearch">
+            </div>
+            <div class="grid-item second-label">
+                Search one site (e.g. wikipedia.org) or limit your results to a domain (e.g. .edu, .org, .gov)
+            </div>
+            <!-- terms appearing -->
+            <div class="grid-item">
+                <label for="">
+                    Terms Appearing
+                </label>
+            </div>
+            <div class="grid-item">
+                <select name="as_occt" id="" class="inp">
+                    <option value="">anywhere in the page</option>
+                    <option value="title">title of the page</option>
+                    <option value="body">in the body of the page</option>
+                    <option value="url">in the url of the page</option>
+                    <option value="link">in the links to the page</option>
+                </select>
+            </div>
+            <div class="grid-item second-label">
+                Search for terms in the whole page, page title or web address, or links to the page you're looking for
+            </div>
+            <!-- safe search -->
+            <div class="grid-item">
+                <label for="">Safe Search</label>
+            </div>
+            <div class="grid-item">
+                <select name="safe" id="">
+                    <option value="images">Show most relevant resukts</option>
+                    <option value="active">Filter explicit results</option>
+                </select>
+            </div>
+            <div class="grid-item second-label">
+                Tell SafeSearch whether to filter sexually explicit content.
+            </div>
+            <div class="grid-item">
+                <select name="as_filetype" id="" class="inp">
+                    <option value="">any format</option>
+                    <option value="pdf">Adobe Acrobat PDF (.pdf)</option>
+                    <option value="xls">Microsoft excel (.xls)</option>
+                    <option value="ppt">Microsoft PowerPoint (.ppt)</option>
+                    <option value="rtf">Rich Text Format (.rtf)</option>
+                </select>
+            </div>
+            <div class="grid-item second-label">
+                Find pages that you are free to use your self.
+            </div>
+            <button type="submit">Advanced Search</button>
+        </form>
+    </div>
+</body>
+</html>
